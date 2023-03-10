@@ -18,16 +18,13 @@ def SKILL_W(press_time, wait=True):
     a.wait = wait
     executor.event_list.append(a)
 
-print(executor.total_time())
 
 SKILL_Q(2)
-SKILL_W(2,False)
-SKILL_Q(2)
+SKILL_W(1,False)
 
-
-print("Predict time cost",executor.total_time())
 
 t1 = time.time()
-executor.execute()
+# executor.execute()
 t2 = time.time()
+print("Predict time cost",executor.total_time())
 print("real time cost: ", t2-t1)
