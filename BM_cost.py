@@ -8,13 +8,13 @@ def Left_shun(press_time=0.18):
     tmp.key_code = base.key_Left
     tmp.press_time = 0.16
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.13)
 
     tmp.key_code = base.key_LAlt
     tmp.press_time = press_time
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.18)
 
 
@@ -23,13 +23,13 @@ def Right_shun(press_time=0.18):
     tmp.key_code = base.key_Right
     tmp.press_time = 0.16
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.13)
 
     tmp.key_code = base.key_LAlt
     tmp.press_time = press_time
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.18)
 
 
@@ -38,7 +38,7 @@ def Right_walk(press_time):
     tmp.key_code = base.key_Right
     tmp.press_time = press_time
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
 
 
 def Left_walk(press_time):
@@ -46,7 +46,7 @@ def Left_walk(press_time):
     tmp.key_code = base.key_Left
     tmp.press_time = press_time
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
 
 
 def Up_shun():
@@ -54,13 +54,13 @@ def Up_shun():
     tmp.key_code = base.key_UpArrow
     tmp.press_time = 0.16
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.13)
 
     tmp.key_code = base.key_LAlt
     tmp.press_time = 0.2
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.18)
 
 
@@ -69,13 +69,13 @@ def Down_shun():
     tmp.key_code = base.key_DownArrow
     tmp.press_time = 0.16
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.13)
 
     tmp.key_code = base.key_LAlt
     tmp.press_time = 0.2
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.18)
 
 
@@ -84,13 +84,13 @@ def Left_jump(press_time=0.12):
     tmp.key_code = base.key_Left
     tmp.press_time = 0.36
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.08)
 
     tmp.key_code = base.key_space
     tmp.press_time = press_time
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
 
 
 def Right_jump(press_time=0.12):
@@ -98,13 +98,13 @@ def Right_jump(press_time=0.12):
     tmp.key_code = base.key_Right
     tmp.press_time = 0.36
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.08)
 
     tmp.key_code = base.key_space
     tmp.press_time = press_time
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
 
 
 def Left_duan_shun():
@@ -112,13 +112,13 @@ def Left_duan_shun():
     tmp.key_code = base.key_Left
     tmp.press_time = 0.09
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.03)
 
     tmp.key_code = base.key_LAlt
     tmp.press_time = 0.03
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.25)
 
 
@@ -127,13 +127,13 @@ def erda_shower():
     tmp.key_code = base.key_DownArrow
     tmp.press_time = 0.39
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.13)
 
     tmp.key_code = base.key_LShift
     tmp.press_time = 0.13
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.18)
 
 
@@ -142,13 +142,13 @@ def altar():
     tmp.key_code = base.key_DownArrow
     tmp.press_time = 0.39
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.13)
 
     tmp.key_code = base.key_LCtrl
     tmp.press_time = 0.13
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.13)
 
 
@@ -157,7 +157,7 @@ def JQQQ():
     tmp.key_code = base.key_q
     tmp.press_time = 0.13
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.02)
 
 
@@ -166,7 +166,7 @@ def JWWW():
     tmp.key_code = base.key_w
     tmp.press_time = 0.15
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.14)
 
 
@@ -175,7 +175,7 @@ def JEEE():
     tmp.key_code = base.key_e
     tmp.press_time = 0.15
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.14)
 
 
@@ -184,7 +184,7 @@ def J111():
     tmp.key_code = base.key_1
     tmp.press_time = 0.6
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.3)
 
 
@@ -193,7 +193,7 @@ def J222():
     tmp.key_code = base.key_2
     tmp.press_time = 0.12
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.3)
 
 
@@ -202,7 +202,7 @@ def J444():
     tmp.key_code = base.key_4
     tmp.press_time = 0.22
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.3)
 
 
@@ -211,7 +211,7 @@ def J333():
     tmp.key_code = base.key_3
     tmp.press_time = 0.2
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.1)
 
 
@@ -221,7 +221,7 @@ def JRRR():
     tmp.key_code = base.key_r
     tmp.press_time = 0.02
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
 
 
 def Jttt():
@@ -229,7 +229,7 @@ def Jttt():
     tmp.key_code = base.key_t
     tmp.press_time = 0.3
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.2)
 
 
@@ -238,7 +238,7 @@ def Jdel():
     tmp.key_code = base.key_del
     tmp.press_time = 0.3
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.2)
 
 
@@ -247,7 +247,7 @@ def JINS():
     tmp.key_code = base.key_ins
     tmp.press_time = 0.3
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.45)
 
 
@@ -256,7 +256,7 @@ def JPGUP():
     tmp.key_code = base.key_PGUP
     tmp.press_time = 0.3
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.25)
 
 
@@ -265,7 +265,7 @@ def R_S_A():
     tmp.key_code = base.key_Right
     tmp.press_time = 0.08
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
 
     JRRR()
     JQQQ()
@@ -277,7 +277,7 @@ def L_S_A():
     tmp.key_code = base.key_Left
     tmp.press_time = 0.08
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     JRRR()
     JQQQ()
     Left_shun()
@@ -288,7 +288,7 @@ def F10():
     tmp.key_code = base.key_F10
     tmp.press_time = 0.18
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
 
 
 def UP_L_Q():
@@ -296,31 +296,31 @@ def UP_L_Q():
     tmp.key_code = base.key_UpArrow
     tmp.press_time = 0.29
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.13)
 
     tmp.key_code = base.key_LAlt
     tmp.press_time = 0.04
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.04)
 
     tmp.key_code = base.key_Left
     tmp.press_time = 0.4
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.09)
 
     tmp.key_code = base.key_q
     tmp.press_time = 0.2
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.43)
 
     tmp.key_code = base.key_q
     tmp.press_time = 0.2
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.2)
 
 
@@ -329,31 +329,31 @@ def UP_R_Q():
     tmp.key_code = base.key_UpArrow
     tmp.press_time = 0.29
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.13)
 
     tmp.key_code = base.key_LAlt
     tmp.press_time = 0.04
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.04)
 
     tmp.key_code = base.key_Right
     tmp.press_time = 0.4
     tmp.wait = False
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.09)
 
     tmp.key_code = base.key_q
     tmp.press_time = 0.2
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.43)
 
     tmp.key_code = base.key_q
     tmp.press_time = 0.2
     tmp.wait = True
-    executor.event_list.append(tmp)
+    executor.append_event(tmp)
     executor.sleep(0.2)
 
 
@@ -374,10 +374,7 @@ def R_QING(i=4):
         i -= 1
 
 
-print("启动，等待5s")
 
-
-time.sleep(5)
 
 
 # print(executor.total_time())
@@ -504,6 +501,11 @@ executor.sleep(0.8)
 F10()
 Down_shun()
 JQQQ()
+time.sleep(5)
+
+print("启动，等待5s")
+
+time.sleep(5)
 
 T1 = time.time()
 executor.execute()

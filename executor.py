@@ -23,7 +23,18 @@ class up_event:
 
 game_time = 0.0
 
-event_list = []
+_event_list = []
+
+def append_event(k_e:key_event):
+    new_k_e =  key_event()
+    new_k_e.key_code = k_e.key_code
+    new_k_e.wait = k_e.wait
+    new_k_e.press_time = k_e.press_time
+    
+    _event_list.append( new_k_e)
+
+    
+
 
 # 获取最近要抬起的键
 
@@ -51,14 +62,14 @@ def sleep(time: float):
     tmp.key_code = sleep_key
     tmp.press_time = time
     tmp.wait = True
-    event_list.append(tmp)
+    _event_list.append(tmp)
 
 # 计算执行完所有按键需要的时间
 
 
 def total_time():
     global game_time
-    for event in event_list:
+    for event in _event_list:
         if (event.key_code != sleep_key):
             game_time += 2*scan_time
         if (event.wait):
@@ -75,7 +86,7 @@ def timesleep(t: float):
 # 真正执行按键操作
 def execute():
     up_event_list = []  # 已按下\等待抬起的事件,每次 down,up,sleep 都要 flow
-    for event in event_list:
+    for event in _event_list:
         while True:  # 如果一直有延迟的抬起就不断执行
             closest_event = get_closest_event(up_event_list)
             if (closest_event != None and closest_event.delay_time < scan_time):
